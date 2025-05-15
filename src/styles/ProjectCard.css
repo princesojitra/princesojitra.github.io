@@ -1,0 +1,156 @@
+.project-card {
+  background-color: var(--ios-card-background);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: all var(--transition-medium);
+  padding: var(--spacing-md);
+  box-shadow: 0 2px 10px var(--ios-shadow);
+}
+
+.project-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+  color: var(--ios-text-primary);
+}
+
+body.dark-theme .project-title {
+  color: var(--ios-dark-text-primary);
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-md);
+}
+
+.project-tag {
+  background-color: var(--ios-primary-light-bg);
+  color: var(--ios-primary);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+body.dark-theme .project-tag {
+  background-color: var(--ios-dark-primary-light-bg);
+}
+
+/* Project info section */
+.project-info {
+  margin-bottom: var(--spacing-md);
+}
+
+.project-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: var(--spacing-sm);
+  font-size: 14px;
+}
+
+.project-description {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: var(--spacing-md);
+  color: var(--ios-text-primary);
+}
+
+body.dark-theme .project-description {
+  color: var(--ios-dark-text-primary);
+}
+
+/* App Store link button */
+.app-link-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--ios-appstore-button-bg);
+  color: var(--ios-appstore-text);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  margin-bottom: var(--spacing-md);
+  box-shadow: 0 2px 8px var(--ios-appstore-shadow);
+}
+
+.app-link-button:hover {
+  background-color: var(--ios-appstore-button-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--ios-appstore-shadow-hover);
+}
+
+body.dark-theme .app-link-button {
+  background-color: var(--ios-dark-appstore-button-bg);
+  box-shadow: 0 2px 8px var(--ios-dark-appstore-shadow);
+}
+
+body.dark-theme .app-link-button:hover {
+  background-color: var(--ios-dark-appstore-button-hover);
+  box-shadow: 0 4px 12px var(--ios-dark-appstore-shadow-hover);
+}
+
+.app-link-icon {
+  margin-right: 4px;
+}
+
+/* Thumbnails row */
+.project-thumbnails {
+  display: flex;
+  overflow-x: auto;
+  gap: 8px;
+  margin-bottom: var(--spacing-xs);
+  padding-bottom: 4px;
+  scrollbar-width: thin;
+}
+
+.project-thumbnails::-webkit-scrollbar {
+  height: 4px;
+}
+
+.project-thumbnails::-webkit-scrollbar-track {
+  background: var(--ios-scrollbar-track);
+  border-radius: 10px;
+}
+
+.project-thumbnails::-webkit-scrollbar-thumb {
+  background: var(--ios-scrollbar-thumb);
+  border-radius: 10px;
+}
+
+body.dark-theme .project-thumbnails::-webkit-scrollbar-track {
+  background: var(--ios-dark-scrollbar-track);
+}
+
+body.dark-theme .project-thumbnails::-webkit-scrollbar-thumb {
+  background: var(--ios-dark-scrollbar-thumb);
+}
+
+.project-thumbnail {
+  width: 80px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: transform 0.2s;
+  border: 2px solid transparent;
+}
+
+.project-thumbnail:hover {
+  transform: translateY(-2px);
+  border-color: var(--ios-primary);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .project-thumbnail {
+    width: 70px;
+    height: 120px;
+  }
+}

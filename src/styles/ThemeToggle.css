@@ -1,0 +1,26 @@
+/* Theme toggle button styled as a small text link */
+.theme-icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.75rem;
+  padding: 3px 6px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  outline: none;
+  color: #8a8a8a;
+  opacity: 0.6;
+  font-weight: normal;
+}
+
+.theme-icon-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  opacity: 0.8;
+}
+
+.theme-icon-button:active {
+  transform: scale(0.95);
+} 

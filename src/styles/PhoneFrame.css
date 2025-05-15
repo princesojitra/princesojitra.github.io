@@ -1,0 +1,210 @@
+.phone-frame-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: transparent;
+  transition: background-color var(--transition-medium);
+  overflow: hidden; /* Prevent outer scrolling */
+  height: 100vh; /* Fix the height */
+  position: fixed; /* Prevent page scroll */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.dark-phone-frame {
+  background-color: var(--ios-dark-page-background);
+}
+
+.phone-frame {
+  position: relative;
+  width: 375px;
+  height: 812px;
+  background-color: var(--ios-card-background);
+  border-radius: 60px;
+  box-shadow: 0 15px 30px var(--ios-shadow);
+  border: 10px solid var(--ios-text-primary);
+  overflow: hidden;
+  transition: background-color var(--transition-medium), border-color var(--transition-medium), box-shadow var(--transition-medium);
+}
+
+.dark-frame {
+  background-color: var(--ios-dark-background);
+  border-color: var(--ios-text-primary);
+  box-shadow: 0 15px 30px var(--ios-dark-shadow);
+}
+
+/* Content area of the phone */
+.phone-frame-content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: transparent;
+  padding-top: 55px; /* Add padding to avoid overlap with status bar */
+  padding-bottom: 20px; /* Space for home indicator */
+}
+
+/* Status bar with Dynamic Island */
+.phone-frame-status-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 48px;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 28px;
+  background-color: transparent;
+}
+
+/* Time display */
+.status-bar-time {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  width: 54px;
+  text-align: center;
+  background-color: transparent;
+  transition: color var(--transition-medium);
+}
+
+/* Status icons (network, wifi, battery) */
+.status-bar-icons {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  width: 80px;
+  justify-content: flex-end;
+}
+
+/* SVG Icons */
+.signal-icon-svg {
+  width: 18px;
+  height: 12px;
+  transition: fill var(--transition-medium);
+}
+
+.wifi-icon-svg {
+  width: 18px;
+  height: 14px;
+  opacity: 0.9;
+  transition: fill var(--transition-medium);
+}
+
+.battery-icon-svg {
+  width: 25px;
+  height: 12px;
+  transition: fill var(--transition-medium), stroke var(--transition-medium);
+}
+
+/* Dynamic Island (iPhone 15/16 Pro) */
+.dynamic-island {
+  position: absolute;
+  top: 11px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 126px;
+  height: 31px;
+  background-color: var(--ios-text-primary);
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  z-index: 101;
+}
+
+.dynamic-island-camera {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, var(--camera-dark) 30%, var(--camera-darker) 70%);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+.dynamic-island-sensor {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, var(--sensor-dark) 30%, var(--camera-darker) 70%);
+}
+
+/* Home indicator at bottom of screen */
+.phone-frame-home-indicator {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 134px;
+  height: 5px;
+  background-color: var(--ios-text-primary);
+  border-radius: 3px;
+  z-index: 100;
+  opacity: 0.3;
+  transition: background-color var(--transition-medium);
+}
+
+.dark-home-indicator {
+  background-color: var(--ios-dark-text-primary);
+  opacity: 0.3;
+}
+
+/* Light/Dark status bar variants */
+.light-status-bar .status-bar-time {
+  color: var(--ios-dark-text-primary);
+}
+
+.dark-status-bar .status-bar-time {
+  color: var(--ios-text-primary);
+}
+
+/* Ensure iOS app takes full height of phone frame content */
+.phone-frame-content .ios-app {
+  height: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure proper tab bar positioning inside phone frame */
+.phone-frame-content .tab-bar {
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  z-index: 90 !important; /* Below home indicator */
+}
+
+/* Mobile device specific overrides */
+@media (max-width: 767px) {
+  .phone-frame-content {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .phone-frame-content .ios-app {
+    height: 100vh;
+    max-height: 100vh;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-height: 850px) {
+  .phone-frame {
+    transform: scale(0.9);
+  }
+}
+
+@media (max-height: 750px) {
+  .phone-frame {
+    transform: scale(0.8);
+  }
+}

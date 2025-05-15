@@ -1,0 +1,104 @@
+.tab-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--ios-header-background);
+  border-top: 1px solid var(--ios-separator);
+  height: 76px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Dark mode styles for tab bar */
+body.dark-theme .tab-bar {
+  background-color: var(--ios-dark-header-background);
+  border-top-color: var(--ios-dark-separator);
+}
+
+/* Mobile view (outside phone frame) */
+@media (max-width: 767px) {
+  .tab-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+/* Desktop/tablet view (inside phone frame) */
+.phone-frame-content .tab-bar {
+  position: absolute !important; /* Override any other positioning */
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  z-index: 90 !important; /* Below home indicator */
+}
+
+.tab-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-sm);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--ios-text-secondary);
+  transition: color var(--transition-fast);
+  width: 16.66%; /* 6 tabs */
+}
+
+.tab-item.active {
+  color: var(--ios-primary);
+}
+
+/* Dark mode tab items */
+body.dark-theme .tab-item {
+  color: var(--ios-dark-text-secondary);
+}
+
+body.dark-theme .tab-item.active {
+  color: var(--ios-primary);
+}
+
+.tab-icon {
+  margin-bottom: 4px;
+  position: relative;
+}
+
+.tab-label {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+/* Animate tab icons on click */
+.tab-item:active .tab-icon {
+  transform: scale(0.9);
+}
+
+/* iOS-specific tab bar fixes */
+@supports (-webkit-touch-callout: none) {
+  .tab-bar {
+    height: calc(76px + env(safe-area-inset-bottom, 0px));
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  
+  /* For mobile devices */
+  @media (max-width: 767px) {
+    .tab-bar {
+      height: calc(76px + env(safe-area-inset-bottom, 0px));
+    }
+  }
+}
+
+/* Adjust content padding to make space for the tab bar */
+.phone-frame-content .ios-content {
+  padding-bottom: 76px; /* Exact height of tab bar */
+}
+

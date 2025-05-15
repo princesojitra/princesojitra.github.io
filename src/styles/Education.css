@@ -1,0 +1,51 @@
+.education-container {
+  padding-bottom: 80px;
+}
+
+.education-card {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+}
+
+.education-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: var(--ios-primary-light-bg);
+  border-radius: 16px;
+  color: var(--ios-primary);
+  flex-shrink: 0;
+}
+
+body.dark-theme .education-icon {
+  background-color: var(--ios-dark-primary-light-bg);
+}
+
+.education-details {
+  flex: 1;
+}
+
+.degree-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: var(--spacing-xs);
+  color: var(--ios-text-primary);
+}
+
+body.dark-theme .degree-title {
+  color: var(--ios-dark-text-primary);
+}
+
+.institution {
+  font-size: 16px;
+  margin-bottom: var(--spacing-xs);
+  color: var(--ios-text-secondary);
+}
+
+.education-period {
+  font-size: 14px;
+  color: var(--ios-primary);
+}

@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* iOS colors - light theme */
+  --ios-background: #F2F2F7;
+  --ios-card-background: #FFFFFF;
+  --ios-primary: #007AFF;
+  --ios-secondary: #5AC8FA;
+  --ios-success: #34C759;
+  --ios-warning: #FF9500;
+  --ios-error: #FF3B30;
+  --ios-text-primary: #000000;
+  --ios-text-secondary: #8E8E93;
+  --ios-border: #C7C7CC;
+  --ios-separator: #E5E5EA;
+  --ios-header-background: rgba(249, 249, 249, 0.94);
+  --ios-page-background: #fafafa;
+  --ios-button-hover: #0066CC;
+  --ios-shadow: rgba(0, 0, 0, 0.05);
+  --ios-scrollbar-track: #f1f1f1;
+  --ios-scrollbar-thumb: #888;
+  --ios-timeline-marker-border: #FFFFFF;
+  --ios-primary-light-bg: rgba(0, 122, 255, 0.1);
+  --ios-appstore-button-bg: #000000;
+  --ios-appstore-button-hover: #333333;
+  --ios-appstore-text: #FFFFFF;
+  --ios-appstore-shadow: rgba(0, 0, 0, 0.1);
+  --ios-appstore-shadow-hover: rgba(0, 0, 0, 0.15);
+  --ios-carousel-button-bg: rgba(255, 255, 255, 0.8);
+  --ios-carousel-shadow: rgba(0, 0, 0, 0.1);
+  
+  /* Dark theme colors */
+  --ios-dark-background: #1C1C1E;
+  --ios-dark-card-background: #2C2C2E;
+  --ios-dark-text-primary: #FFFFFF;
+  --ios-dark-text-secondary: #AEAEB2;
+  --ios-dark-border: #38383A;
+  --ios-dark-separator: #38383A;
+  --ios-dark-header-background: rgba(29, 29, 31, 0.94);
+  --ios-dark-page-background: #000000;
+  --ios-dark-button-hover: #0077e5;
+  --ios-dark-shadow: rgba(0, 0, 0, 0.2);
+  --ios-dark-scrollbar-track: #2C2C2E;
+  --ios-dark-scrollbar-thumb: #444444;
+  --ios-dark-timeline-marker-border: #2C2C2E;
+  --ios-dark-primary-light-bg: rgba(0, 122, 255, 0.2);
+  --ios-dark-appstore-button-bg: #1C1C1E;
+  --ios-dark-appstore-button-hover: #444444;
+  --ios-dark-appstore-shadow: rgba(0, 0, 0, 0.2);
+  --ios-dark-appstore-shadow-hover: rgba(0, 0, 0, 0.25);
+  --ios-dark-carousel-button-bg: rgba(60, 60, 60, 0.8);
+  --ios-dark-carousel-shadow: rgba(0, 0, 0, 0.2);
+  
+  /* Camera colors */
+  --camera-dark: #444;
+  --camera-darker: #222;
+  --sensor-dark: #333;
+  
+  /* Typography */
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  
+  /* Animation */
+  --transition-fast: 0.2s;
+  --transition-medium: 0.3s;
+}
+
+/* Apply theme transitions to elements */
+body, .ios-app, .ios-card, .ios-header, .tab-bar, .ios-button {
+  transition: background-color var(--transition-medium), color var(--transition-medium), border-color var(--transition-medium);
+}
+
+/* Dark theme class */
+body.dark-theme {
+  color: var(--ios-dark-text-primary);
+  background-color: var(--ios-dark-page-background);
+}
+
+body.dark-theme .ios-app {
+  background-color: var(--ios-dark-background);
+}
+
+body.dark-theme .ios-card {
+  background-color: var(--ios-dark-card-background);
+  box-shadow: 0 2px 10px var(--ios-dark-shadow);
+}
+
+body.dark-theme .ios-header {
+  background-color: var(--ios-dark-header-background);
+  border-color: var(--ios-dark-border);
+}
+
+body.dark-theme .tab-bar {
+  background-color: var(--ios-dark-card-background);
+  border-color: var(--ios-dark-border);
+}
+
+body.dark-theme .ios-text-primary {
+  color: var(--ios-dark-text-primary);
+}
+
+body.dark-theme .ios-text-secondary {
+  color: var(--ios-dark-text-secondary);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* iOS viewport height fixes */
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+@supports (-webkit-touch-callout: none) {
+  html, body {
+    height: -webkit-fill-available;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+body {
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--ios-text-primary);
+  background-color: var(--ios-page-background);
+}
+
+.ios-app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--ios-background);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Adjust app container when inside phone frame */
+@media (min-width: 768px) {
+  .phone-frame-content .ios-app {
+    height: 100%;
+    position: static; /* Prevent positioning issues */
+  }
+  
+  /* Prevent body scrolling when in desktop mode with phone frame */
+  body {
+    overflow: hidden;
+    height: 100vh;
+  }
+  
+  /* Only the content inside the phone should scroll */
+  .phone-frame-content .ios-content {
+    overflow-y: auto;
+  }
+}
+
+.ios-content {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 80px; /* Give space for the tab bar */
+  overflow-x: hidden;
+  height: auto;
+  min-height: 100%;
+}
+
+/* Make sure the content inside phone frame has proper spacing for tab bar */
+.phone-frame-content .ios-content {
+  padding-bottom: 80px !important; /* Ensure space for the tab bar */
+  height: calc(100% - 55px - 20px); /* Subtract status bar and home indicator space */
+  position: absolute;
+  top: 55px;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+}
+
+/* Override for actual mobile devices */
+@media (max-width: 767px) {
+  .ios-content {
+    height: 100vh;
+    padding-bottom: 60px; /* Reduced padding for tab bar on mobile */
+    max-height: 100vh;
+    position: relative; 
+    top: 0;
+  }
+  
+  /* On actual mobile devices, there's no need for the phone frame content styles */
+  .phone-frame-content .ios-content {
+    height: 100vh;
+    position: relative;
+    top: 0;
+    padding-top: 0;
+    padding-bottom: 60px !important;
+  }
+}
+
+/* iOS-specific fixes for scrolling to bottom */
+@supports (-webkit-touch-callout: none) {
+  .ios-content {
+    /* Use fill-available instead of vh for iOS */
+    min-height: -webkit-fill-available;
+    /* Add extra padding for iOS */
+    padding-bottom: calc(90px + env(safe-area-inset-bottom, 20px));
+    /* Force the content to be scrollable */
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .phone-frame-content .ios-content {
+    padding-bottom: calc(90px + env(safe-area-inset-bottom, 20px)) !important;
+  }
+  
+  @media (max-width: 767px) {
+    .ios-content {
+      min-height: -webkit-fill-available;
+      /* Increase padding further for mobile */
+      padding-bottom: calc(90px + env(safe-area-inset-bottom, 20px));
+    }
+    
+    .phone-frame-content .ios-content {
+      padding-bottom: calc(90px + env(safe-area-inset-bottom, 20px)) !important;
+    }
+    
+    /* Add extra content to force scrolling */
+    .ios-section:last-child:after {
+      content: '';
+      display: block;
+      height: 60px;
+    }
+  }
+}
+
+.ios-section {
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.ios-card {
+  background-color: var(--ios-card-background);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+  box-shadow: 0 2px 10px var(--ios-shadow);
+  margin-bottom: var(--spacing-md);
+  /* no scrollbar */
+  overflow-y: hidden;
+}
+
+.ios-button {
+  display: inline-block;
+  background-color: var(--ios-primary);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color var(--transition-fast);
+}
+
+.ios-button:hover {
+  background-color: var(--ios-button-hover);
+}
+
+body.dark-theme .ios-button:hover {
+  background-color: var(--ios-dark-button-hover);
+}
+
+/* Custom scrollbar for desktop */
+@media (min-width: 768px) {
+  .ios-content::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .ios-content::-webkit-scrollbar-track {
+    background: var(--ios-background);
+  }
+
+  body.dark-theme .ios-content::-webkit-scrollbar-track {
+    background: var(--ios-dark-background);
+  }
+
+  .ios-content::-webkit-scrollbar-thumb {
+    background-color: var(--ios-border);
+    border-radius: 20px;
+  }
+
+  body.dark-theme .ios-content::-webkit-scrollbar-thumb {
+    background-color: var(--ios-dark-border);
+  }
+}
+
+/* Prevent text selection on mobile */
+@media (max-width: 767px) {
+  body {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+}

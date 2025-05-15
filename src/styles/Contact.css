@@ -1,0 +1,66 @@
+.contact-container {
+  padding-bottom: 80px;
+}
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  text-decoration: none;
+  color: inherit;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  margin-bottom: 0 !important;
+}
+
+.contact-card:hover, .contact-card:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px var(--ios-shadow);
+}
+
+body.dark-theme .contact-card:hover,
+body.dark-theme .contact-card:focus {
+  box-shadow: 0 6px 16px var(--ios-dark-shadow);
+}
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--ios-primary-light-bg);
+  border-radius: 50%;
+  color: var(--ios-primary);
+  flex-shrink: 0;
+}
+
+body.dark-theme .contact-icon {
+  background-color: var(--ios-dark-primary-light-bg);
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-info h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: var(--ios-text-primary);
+}
+
+body.dark-theme .contact-info h3 {
+  color: var(--ios-dark-text-primary);
+}
+
+.contact-info p {
+  font-size: 14px;
+  color: var(--ios-text-secondary);
+}

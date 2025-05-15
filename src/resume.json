@@ -1,0 +1,211 @@
+{
+  "basics": {
+    "name": "Prince Sojitra",
+    "title": "iOS Developer",
+    "image": "./assets/images/profile.jpeg",
+    "email": "princehsojitra@gmail.com",
+    "phone": "+919428242130",
+    "location": "Pune, Maharashtra, India",
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "prince-sojitra-120404107",
+        "url": "https://linkedin.com/in/prince-sojitra-120404107"
+      },
+      {
+        "network": "GitHub",
+        "username": "princesojitra",
+        "url": "https://github.com/princesojitra"
+      }
+    ]
+  },
+  "summary": "Software engineer with 11+ years of experience in iOS application development. Strong skills in Swift, SwiftUI, and Objective-C, with basic knowledge of Flutter. Experienced in the full development cycle from planning to release using Agile methods. Led teams and worked closely with QA and business teams. Focused on improving product quality through code reviews and testing. Good at turning client needs into workable solutions within Scrum teams.",
+  "skills": [
+    {
+      "category": "Coding Languages",
+      "items": ["Objective-C", "Swift", "SwiftUI", "Dart"]
+    },
+    {
+      "category": "Frameworks/Systems",
+      "items": ["MVC, MVVM, MVP, VIPER", "RxSwift", "Xcode", "Visual Studio"]
+    },
+    {
+      "category": "Others",
+      "items": ["Object-Oriented Design", "Agile Methodology", "Software Testing and Debugging", "Communication", "Leadership"]
+    }
+  ],
+  "languages": [
+    { "language": "English", "fluency": "Proficient" },
+    { "language": "Hindi", "fluency": "Proficient" },
+    { "language": "Gujarati", "fluency": "Native" }
+  ],
+  "work": [
+    {
+      "id": 1,
+      "title": "Senior Member of Technical Staff",
+      "company": "Axio Digital Private Limited",
+      "location": "Pune",
+      "period": "May 2022 – Present",
+      "responsibilities": [
+        "Developed and maintained a comprehensive iOS application for financial services, including credits, personal loans, and expense tracking.",
+        "Provided technical leadership, owning component design, development, and project delivery.",
+        "Collaborated with the mobile department manager to provide estimates and status updates.",
+        "Improved product quality through code reviews, unit testing, and QA collaboration."
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Technical Lead",
+      "company": "Wipro Limited",
+      "location": "Pune",
+      "period": "November 2020 – May 2022",
+      "responsibilities": [
+        "Collaborated with cross-functional teams to define, design, and ship new features.",
+        "Coordinated project development, prioritizing goals and deadlines.",
+        "Ensured application performance, quality, and responsiveness."
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Software Engineer",
+      "company": "DRC Systems India Limited",
+      "location": "Gandhinagar",
+      "period": "June 2013 – October 2020",
+      "responsibilities": [
+        "Worked with designers and developers to build new features aligned with the product roadmap.",
+        "Designed and developed high-performance iOS applications.",
+        "Identified and resolved bottlenecks and bugs to ensure quality."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Technology (B.Tech.) in Computer Engineering",
+      "institution": "Dharmsinh Desai University, Nadiad",
+      "period": "June 2009 – May 2013"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "axio: BNPL, Personal Loan & Expense Tracker",
+      "role": "iOS Developer",
+      "language": "Swift, Combine",
+      "technology": "iOS",
+      "folderName": "axio",
+      "description": "Simple and intuitive, the axio app brings three industry-leading products: 1) axio Pay Later - BNPL credit facility transforming purchases into affordable EMIs, 2) Personal loan - Access exceptional loan options, monitor EMIs, and receive timely repayment reminders, 3) Shop - Explore categories across brands with affordable EMIs, 4) Expense Tracker - Track expenses, plan budgets, monitor daily/monthly expenses, manage bills, and receive payment reminders, 5) Splits & Groups - Split expenses with friends/family in private or shared groups with in-app chat and flexible splitting options.",
+      "appLink": "https://apps.apple.com/in/app/axio-bnpl-personal-loan/id6449531839",
+      "screenshots": [
+        "./assets/projects/axio/screenshot-1.png",
+        "./assets/projects/axio/screenshot-2.png",
+        "./assets/projects/axio/screenshot-3.png",
+        "./assets/projects/axio/screenshot-4.png",
+        "./assets/projects/axio/screenshot-5.png",
+        "./assets/projects/axio/screenshot-6.png",
+        "./assets/projects/axio/screenshot-7.png",
+        "./assets/projects/axio/screenshot-8.png"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "My Telstra - Utilities",
+      "role": "Module Lead",
+      "language": "Swift, RxSwift",
+      "technology": "iOS",
+      "folderName": "my-telstra",
+      "description": "The My Telstra app is helping over 4.5 million users securely access and manage their Telstra accounts and services. Sign in with a Telstra ID or create one when you've downloaded the app and get the latest on your services, Telstra Plus points, bills and payments when you want it, shop latest devices and accessories and get help when you need it, all in one place.",
+      "appLink": "https://apps.apple.com/us/app/my-telstra/id543829966",
+      "screenshots": [
+        "./assets/projects/my-telstra/screenshot-1.png",
+        "./assets/projects/my-telstra/screenshot-2.png",
+        "./assets/projects/my-telstra/screenshot-3.png"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Sun Keeper - Health & Fitness",
+      "role": "Senior iOS Developer",
+      "language": "Swift",
+      "technology": "iOS",
+      "folderName": "sun-keeper",
+      "description": "This simple and user-friendly app helps you to manage your personal recommended daily sun exposure for optimal production of vitamin D and overall skin health — and before you're ever at risk of burning. By authorizing your location and entering basic personal information about your skin type, Sun Keeper will calculate a sufficient and appropriate length of time you should spend in the sun. When your sun-exposure limit is reached, the app will alert and remind you to reapply sunscreen, cover up, or get out of the sun. Sun Keeper offers recommendations that vary with the individual and are based on the personal information you enter along with your location, date, and time.",
+      "screenshots": [
+        "./assets/projects/sun-keeper/screenshot-1.png",
+        "./assets/projects/sun-keeper/screenshot-2.png",
+        "./assets/projects/sun-keeper/screenshot-3.png",
+        "./assets/projects/sun-keeper/screenshot-4.png",
+        "./assets/projects/sun-keeper/screenshot-5.png"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "LECA Consultant - Energy Projects",
+      "role": "Senior iOS Developer",
+      "language": "Swift",
+      "technology": "iOS",
+      "folderName": "leca-consultant-app",
+      "description": "The Leca Consultant application is a tool catered for our consultants where they can not only handle their day-to-day consultations but also create installation jobs and collect the required customer details. The in-built Leca Calculator, calculates the ideal system size for a customer based on these details and the app allows them to track each installation job they created, throughout its life-cycle.",
+      "screenshots": [
+        "./assets/projects/leca-consultant-app/screenshot-1.png",
+        "./assets/projects/leca-consultant-app/screenshot-2.png",
+        "./assets/projects/leca-consultant-app/screenshot-3.png",
+        "./assets/projects/leca-consultant-app/screenshot-4.png"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "LECA Installer - Energy Projects",
+      "role": "Senior iOS Developer",
+      "language": "Swift",
+      "technology": "iOS",
+      "folderName": "leca-installer-app",
+      "description": "The Leca Installer application is a tool catered for our installers where they can not only handle their day-to-day installation jobs but also schedule future jobs. The app assists the installers throughout an installation, right from knowing every job detail prior to job acceptance, to managing all post-installation documentation. The app notifies registered Installers about upcoming installation jobs and site visits. They can proceed to accept jobs after they take a look at the job description provided. On the day of the installation, the app tracks the entire installation process step-by-step and allows the admin at Leca to validate the installation.",
+      "screenshots": [
+        "./assets/projects/leca-installer-app/screenshot-1.png",
+        "./assets/projects/leca-installer-app/screenshot-2.png",
+        "./assets/projects/leca-installer-app/screenshot-3.png"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "PlayBill - Broadway Theater Experience",
+      "role": "Senior iOS Developer",
+      "language": "Swift",
+      "technology": "iOS",
+      "folderName": "playbill",
+      "description": "This application enhances the Broadway theater experience through a mobile platform that offers information and social features. It operates in two modes: 1) Non-Contextual Mode (Default) - Shows general information about Broadway shows and theaters when not near any specific theater, 2) Contextual Mode - Activates automatically when entering a specific theater (detected by beacons), providing specific information about that theater and its shows. Features include listings of shows, theater details, nearby attractions with photos and reviews, and location-based recommendations for restaurants and bars.",
+      "screenshots": [
+        
+      ]
+    },
+    {
+      "id": 7,
+      "title": "TAP - Medical Platform",
+      "role": "Senior iOS Developer",
+      "language": "Swift",
+      "technology": "iOS",
+      "folderName": "tap",
+      "description": "TAP is your new medical platform that meets your needs. It enables you to book a telemedicine consultation with one of our highly qualified & specialized physicians in Saudi Arabia. Upon consultation, your prescription will be sent to you and you can have your medication delivered at your doorstep if you are in Riyadh. Also, coming soon, if you are tired of looking for your prescription just send it to us and relax, we will take care of the rest.",
+      "screenshots": [
+        
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Big Joker Spades - Card Game",
+      "role": "Senior iOS Developer",
+      "language": "Swift",
+      "technology": "iOS",
+      "folderName": "big-joker-spades",
+      "description": "Big Joker Spades is focused on bringing an emotional feel to the popular game \"Spades\" through the use of animations and intense game-play. Winning books by cool features and utilizing Jokers throughout the game brings a connection to the players that they won't experience on any other spades platform. In this game jokers are positioned as the highest Spades. So instead of just 13 spades, there are now 15 spades. With more spades it makes this variation an easier game to play.",
+      "screenshots": [
+        "./assets/projects/big-joker-spades/screenshot-1.png",
+        "./assets/projects/big-joker-spades/screenshot-2.png",
+        "./assets/projects/big-joker-spades/screenshot-3.png",
+        "./assets/projects/big-joker-spades/screenshot-4.png",
+        "./assets/projects/big-joker-spades/screenshot-5.png",
+        "./assets/projects/big-joker-spades/screenshot-6.png"
+      ]
+    }
+  ]
+} 
