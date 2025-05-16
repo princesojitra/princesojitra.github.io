@@ -27,7 +27,7 @@
     },
     {
       "category": "Frameworks/Systems",
-      "items": ["MVC, MVVM, MVP, VIPER", "RxSwift", "Xcode", "Visual Studio"]
+      "items": ["MVC, MVVM, MVVM+C, MVP, VIPER", "Combine", "Xcode"]
     },
     {
       "category": "Others",
