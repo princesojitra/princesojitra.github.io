@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website that mimics an iOS mobile interface to showcase your professional experience in a unique way.
 
-**[Live Demo](https://princesojitra.me/ios-portfolio/)** - Check out the live preview!
+**[Live Demo](https://princesojitra.me)** - Check out the live preview!
 
 ![iOS Portfolio Preview](./src/assets/preview.png)
 
