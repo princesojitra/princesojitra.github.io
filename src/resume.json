@@ -28,15 +28,15 @@ knowledge)"]
     },
     {
       "category": "Architecture",
-      "items": ["MVC, "MVVM", "MVVM+C", "MVP", "VIPER"]
+      "items": ["MVC", "MVVM", "MVVM+C", "MVP", "VIPER"]
     },
     {
       "category": "Frameworks",
-      "items": ["Combine, "Push Notifications", "Core Data", "Core Bluetooth", "Core Location", "Push Notifications"]
+      "items": ["Combine", "Push Notifications", "Core Data", "Core Bluetooth", "Core Location", "Push Notifications"]
     },
      {
       "category": "Tooling",
-      "items": ["Xcode, "Git", "CI/CD Pipelines: Xcode Cloud", "CocoaPods", "Swift Package Manager"]
+      "items": ["Xcode", "Git", "CI/CD Pipelines: Xcode Cloud", "CocoaPods", "Swift Package Manager"]
     },
     {
       "category": "Methodologies",
