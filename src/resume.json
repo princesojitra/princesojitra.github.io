@@ -23,15 +23,24 @@
   "skills": [
     {
       "category": "Coding Languages",
-      "items": ["Objective-C", "Swift", "SwiftUI", "Dart"]
+      "items": ["Objective-C", "Swift", "SwiftUI", "Dart(Foundational
+knowledge)"]
     },
     {
-      "category": "Frameworks/Systems",
-      "items": ["MVC, MVVM, MVVM+C, MVP, VIPER", "Combine", "Xcode"]
+      "category": "Architecture",
+      "items": ["MVC, "MVVM", "MVVM+C", "MVP", "VIPER"]
     },
     {
-      "category": "Others",
-      "items": ["Object-Oriented Design", "Agile Methodology", "Software Testing and Debugging", "Communication", "Leadership"]
+      "category": "Frameworks",
+      "items": ["Combine, "Push Notifications", "Core Data", "Core Bluetooth", "Core Location", "Push Notifications"]
+    },
+     {
+      "category": "Tooling",
+      "items": ["Xcode, "Git", "CI/CD Pipelines: Xcode Cloud", "CocoaPods", "Swift Package Manager"]
+    },
+    {
+      "category": "Methodologies",
+      "items": ["Object-Oriented Design", "Agile Methodology", "Software Testing and Debugging"]
     }
   ],
   "languages": [
@@ -48,8 +57,9 @@
       "period": "May 2022 – Present",
       "responsibilities": [
         "Developed and maintained a comprehensive iOS application for financial services, including credits, personal loans, and expense tracking.",
+        "Architected and implemented a modular MVVM framework that reduced code complexity, improved testability and maintenance.",
         "Provided technical leadership, owning component design, development, and project delivery.",
-        "Collaborated with the mobile department manager to provide estimates and status updates.",
+        "Mentored junior developers through code reviews and pair programming sessions.",
         "Improved product quality through code reviews, unit testing, and QA collaboration."
       ]
     },
@@ -60,8 +70,9 @@
       "location": "Pune",
       "period": "November 2020 – May 2022",
       "responsibilities": [
-        "Collaborated with cross-functional teams to define, design, and ship new features.",
-        "Coordinated project development, prioritizing goals and deadlines.",
+        "Developed and maintained help and FAQ feature modules of Telstra iOS application for the Australian telecommunications company.",
+        "Collaborated with cross-functional teams to define, design, and ship new features aligned with product roadmap.",
+        "Participated in agile development processes including daily stand-ups and sprint planning.",
         "Ensured application performance, quality, and responsiveness."
       ]
     },
@@ -72,9 +83,10 @@
       "location": "Gandhinagar",
       "period": "June 2013 – October 2020",
       "responsibilities": [
-        "Worked with designers and developers to build new features aligned with the product roadmap.",
-        "Designed and developed high-performance iOS applications.",
-        "Identified and resolved bottlenecks and bugs to ensure quality."
+        "Designed and built high-performance applications for iOS platform across multiple industry verticals.",
+        "Partnered with designers and developers to create innovative features consistent with product roadmap requirements.",
+        "Implemented UI components using UIKit and integrated RESTful API services",
+        "Identified and resolved bottlenecks and bugs to ensure product quality."
       ]
     }
   ],
