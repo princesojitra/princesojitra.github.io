@@ -23,8 +23,7 @@
   "skills": [
     {
       "category": "Coding Languages",
-      "items": ["Objective-C", "Swift", "SwiftUI", "Dart(Foundational
-knowledge)"]
+      "items": ["Objective-C", "Swift", "SwiftUI", "Dart(Foundational knowledge)"]
     },
     {
       "category": "Architecture",
