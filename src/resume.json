@@ -31,11 +31,11 @@
     },
     {
       "category": "Frameworks",
-      "items": ["Combine", "Push Notifications", "Core Data", "Core Bluetooth", "Core Location", "Push Notifications"]
+      "items": ["Combine", "Push Notifications", "Core Data", "Core Bluetooth", "Core Location"]
     },
      {
       "category": "Tooling",
-      "items": ["Xcode", "Git", "CI/CD Pipelines: Xcode Cloud", "CocoaPods", "Swift Package Manager"]
+      "items": ["Xcode", "Git", "CocoaPods", "Swift Package Manager"]
     },
     {
       "category": "Methodologies",
@@ -100,7 +100,7 @@
     {
       "id": 1,
       "title": "axio: BNPL, Personal Loan & Expense Tracker",
-      "role": "iOS Developer",
+      "role": "Senior iOS Developer",
       "language": "Swift, Combine",
       "technology": "iOS",
       "folderName": "axio",
@@ -120,7 +120,7 @@
     {
       "id": 2,
       "title": "My Telstra - Utilities",
-      "role": "Module Lead",
+      "role": "Senior iOS Developer",
       "language": "Swift, RxSwift",
       "technology": "iOS",
       "folderName": "my-telstra",
@@ -204,7 +204,7 @@
     {
       "id": 8,
       "title": "Big Joker Spades - Card Game",
-      "role": "Senior iOS Developer",
+      "role": "iOS Developer",
       "language": "Swift",
       "technology": "iOS",
       "folderName": "big-joker-spades",
