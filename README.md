@@ -8,14 +8,14 @@ A modern, responsive portfolio website that mimics an iOS mobile interface to sh
 
 ## Features
 
-- 📱 Realistic iOS interface with dynamic island, status bar, and home indicator
-- 🌙 Dark/light mode support
-- 📊 Fully responsive design (displays as an iPhone on desktop, native app on mobile)
-- 🧩 Tabbed navigation (About, Projects, Experience, Education, Contact)
-- 📝 PDF Resume generation
-- 🖼️ Project showcase with image carousels
-- ⚡ Built with React, TypeScript, and Vite
-- 🚀 Easy deployment to GitHub Pages
+- 📱 Realistic iOS interface with dynamic island, status bar, and home indicator.
+- 🌙 Dark/light mode support.
+- 📊 Fully responsive design (displays as an iPhone on desktop, native app on mobile).
+- 🧩 Tabbed navigation (About, Projects, Experience, Education, Contact).
+- 📝 PDF Resume generation.
+- 🖼️ Project showcase with image carousels.
+- ⚡ Built with React, TypeScript, and Vite.
+- 🚀 Easy deployment to GitHub Pages.
 
 ## Getting Started
 
