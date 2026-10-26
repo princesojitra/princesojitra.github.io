@@ -128,6 +128,7 @@
       "language": "Swift, SwiftUI, RxSwift",
       "technology": "iOS",
       "folderName": "property-finder",
+      "appLink": "https://apps.apple.com/in/app/property-finder-real-estate/id897540233",
       "description": "Property Finder is a leading real estate platform for the UAE, Saudi Arabia, Egypt, Qatar, and Bahrain, connecting millions of buyers, renters, and investors with verified listings, interactive map search, transaction history, and 40,000+ trusted SuperAgents. As a Senior iOS Developer, I built scalable SwiftUI and RxSwift features for property discovery, search, rent and transaction flows, and AI-powered home valuation. Worked on backend-driven UI, OpenAPI-driven API integrations, localization, and Split.io feature-flagged rollouts to ship reliable, production-grade experiences for an award-winning property portal.",
       "screenshots": [
         "./assets/projects/property-finder/screenshot-1.png",
