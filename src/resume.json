@@ -1,11 +1,11 @@
 {
   "basics": {
     "name": "Prince Sojitra",
-    "title": "iOS Developer",
-    "image": "./assets/images/profile.jpeg",
+    "title": "Senior iOS Developer",
+    "image": "./assets/images/profile.png",
     "email": "princehsojitra@gmail.com",
     "phone": "+919428242130",
-    "location": "Pune, Maharashtra, India",
+    "location": "Ahmedabad, Gujarat",
     "profiles": [
       {
         "network": "LinkedIn",
@@ -16,30 +16,41 @@
         "network": "GitHub",
         "username": "princesojitra",
         "url": "https://github.com/princesojitra"
+      },
+      {
+        "network": "Portfolio",
+        "username": "princesojitra.github.io",
+        "url": "https://princesojitra.github.io"
       }
     ]
   },
-  "summary": "Seasoned iOS developer specializing in architecting and delivering scalable, maintainable, and performant applications across the iOS ecosystem. Expert in full software development lifecycle from concept to deployment. Highly proficient in Swift, SwiftUI, and Objective-C with a strong foundation in modern iOS development practices. Demonstrated experience in translating complex business requirements into robust, user-friendly applications while maintaining high code quality standards through comprehensive testing and code review processes. Adept at working within agile development environments, collaborating effectively with cross-functional teams including QA, business analysts, and stakeholders to deliver products that exceed client expectations.",
+  "summary": "Senior iOS Developer with 12+ years of experience designing, architecting, and delivering scalable, high-performance mobile applications across fintech, telecom, healthcare, gaming, real estate, and enterprise domains.",
+  "summaryHighlights": [
+    { "label": "Technical Expertise", "detail": "Strong proficiency in Swift, SwiftUI, UIKit, Combine, RxSwift, and Objective-C, with expertise in concurrency, multithreading, and performance optimization." },
+    { "label": "Architecture & Engineering", "detail": "Experienced in Clean Architecture, MVVM, backend-driven UI, OpenAPI-driven development, dependency injection, feature flags, localization, and CI/CD pipelines." },
+    { "label": "Technical Leadership", "detail": "Proven ability to drive end-to-end feature delivery, mentor developers, and collaborate with cross-functional teams." },
+    { "label": "Product Impact", "detail": "Focused on application scalability, reliability, code quality, and performance across production-ready mobile experiences." }
+  ],
   "skills": [
     {
       "category": "Coding Languages",
-      "items": ["Objective-C", "Swift", "SwiftUI", "Dart(Foundational knowledge)"]
+      "items": ["Objective-C", "Swift", "Dart (Foundational knowledge)", "TypeScript (Foundational knowledge)", "JavaScript (Foundational knowledge)"]
     },
     {
       "category": "Architecture",
-      "items": ["MVC", "MVVM", "MVVM+C", "MVP", "VIPER"]
+      "items": ["MVC", "MVVM", "MVVM+C", "MVP", "Clean Architecture", "Dependency Injection"]
     },
     {
       "category": "Frameworks",
-      "items": ["Combine", "Push Notifications", "Core Data", "Core Bluetooth", "Core Location"]
-    },
-     {
-      "category": "Tooling",
-      "items": ["Xcode", "Git", "CocoaPods", "Swift Package Manager"]
+      "items": ["Combine", "UIKit", "SwiftUI", "RxSwift", "Cocoa Touch", "Local Authentication", "Push Notifications", "Core Data", "Firebase", "StoreKit", "Swift Concurrency"]
     },
     {
-      "category": "Methodologies",
-      "items": ["Object-Oriented Design", "Agile Methodology", "Software Testing and Debugging"]
+      "category": "AI & Tools",
+      "items": ["AI-assisted development", "Agentic development workflows", "REST APIs", "OpenAPI", "Xcode", "Git", "Swift Package Manager", "Xcode Cloud", "Fastlane", "Split.io", "Luciq"]
+    },
+    {
+      "category": "Development Practices",
+      "items": ["Agile", "Unit Testing", "Code Review", "A/B Testing", "CI/CD"]
     }
   ],
   "languages": [
@@ -50,42 +61,55 @@
   "work": [
     {
       "id": 1,
-      "title": "Senior Member of Technical Staff",
-      "company": "Axio Digital Private Limited",
-      "location": "Pune",
-      "period": "May 2022 – Present",
+      "title": "Senior iOS Developer",
+      "company": "Property Finder (via TTF Technologies)",
+      "location": "Remote",
+      "period": "July 2025 – Present",
       "responsibilities": [
-        "Developed and maintained a comprehensive iOS application for financial services, including credits, personal loans, and expense tracking.",
-        "Architected and implemented a modular MVVM framework that reduced code complexity, improved testability and maintenance.",
-        "Provided technical leadership, owning component design, development, and project delivery.",
-        "Mentored junior developers through code reviews and pair programming sessions.",
-        "Improved product quality through code reviews, unit testing, and QA collaboration."
+        "Developed scalable iOS features for property discovery, search, transactions, and user engagement using Swift and SwiftUI.",
+        "Integrated Split.io for feature flags and A/B testing, and Luciq SDK for application performance monitoring.",
+        "Implemented OpenAPI-driven API integrations and contributed to backend-driven UI, localization, and modular architecture.",
+        "Contributed to key product features, including AI-powered property valuation, transaction experiences, and agent rating.",
+        "Participated in architecture discussions, code reviews, technical planning, and code quality improvements.",
+        "Collaborated with product, design, and backend teams to deliver reliable, maintainable mobile experiences."
       ]
     },
     {
       "id": 2,
-      "title": "Technical Lead",
-      "company": "Wipro Limited",
+      "title": "Senior iOS Developer",
+      "company": "Axio Digital Private Limited",
       "location": "Pune",
-      "period": "November 2020 – May 2022",
+      "period": "May 2022 – June 2025",
       "responsibilities": [
-        "Developed and maintained help and FAQ feature modules of Telstra iOS application for the Australian telecommunications company.",
-        "Collaborated with cross-functional teams to define, design, and ship new features aligned with product roadmap.",
-        "Participated in agile development processes including daily stand-ups and sprint planning.",
-        "Ensured application performance, quality, and responsiveness."
+        "Developed and maintained fintech iOS applications for Buy Now, Pay Later (BNPL), personal loans, and money management using Swift, RxSwift, and MVVM architecture.",
+        "Designed reusable, modular components to improve code maintainability, reduce complexity, and support scalable feature development.",
+        "Integrated secure REST APIs, troubleshot production issues, and contributed to debugging, performance optimization, and release management.",
+        "Conducted code reviews, mentored junior developers, and collaborated with product, QA, and backend teams to deliver reliable features in Agile environments."
       ]
     },
     {
       "id": 3,
-      "title": "Software Engineer",
+      "title": "Technical Lead",
+      "company": "My Telstra (via Wipro Limited)",
+      "location": "Pune",
+      "period": "November 2020 – May 2022",
+      "responsibilities": [
+        "Developed and maintained Help & FAQ modules for the My Telstra application used by 4.5M+ users.",
+        "Implemented scalable MVVM architecture with RxSwift for modular and maintainable feature development.",
+        "Participated in peer code reviews and collaborated with QA, backend developers, and stakeholders for successful feature delivery.",
+        "Contributed to Agile ceremonies, sprint planning, estimation, release activities, and production stability improvements."
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Senior Software Engineer",
       "company": "DRC Systems India Limited",
       "location": "Gandhinagar",
       "period": "June 2013 – October 2020",
       "responsibilities": [
-        "Designed and built high-performance applications for iOS platform across multiple industry verticals.",
-        "Partnered with designers and developers to create innovative features consistent with product roadmap requirements.",
-        "Implemented UI components using UIKit and integrated RESTful API services",
-        "Identified and resolved bottlenecks and bugs to ensure product quality."
+        "Developed and maintained multiple high-performance iOS applications across healthcare, enterprise, gaming, and business domains during a 7-year tenure.",
+        "Gained strong expertise in Swift, Objective-C, UIKit, REST APIs, push notifications, reusable component development, and application performance optimization.",
+        "Collaborated with cross-functional teams throughout the complete mobile application lifecycle including development, debugging, testing, deployment, and App Store releases."
       ]
     }
   ],
@@ -97,6 +121,25 @@
     }
   ],
   "projects": [
+    {
+      "id": 9,
+      "title": "Property Finder - Real Estate Platform",
+      "role": "Senior iOS Developer",
+      "language": "Swift, SwiftUI, RxSwift",
+      "technology": "iOS",
+      "folderName": "property-finder",
+      "description": "Property Finder is a leading real estate platform for the UAE, Saudi Arabia, Egypt, Qatar, and Bahrain, connecting millions of buyers, renters, and investors with verified listings, interactive map search, transaction history, and 40,000+ trusted SuperAgents. As a Senior iOS Developer, I built scalable SwiftUI and RxSwift features for property discovery, search, rent and transaction flows, and AI-powered home valuation. Worked on backend-driven UI, OpenAPI-driven API integrations, localization, and Split.io feature-flagged rollouts to ship reliable, production-grade experiences for an award-winning property portal.",
+      "screenshots": [
+        "./assets/projects/property-finder/screenshot-1.png",
+        "./assets/projects/property-finder/screenshot-2.png",
+        "./assets/projects/property-finder/screenshot-3.png",
+        "./assets/projects/property-finder/screenshot-4.png",
+        "./assets/projects/property-finder/screenshot-5.png",
+        "./assets/projects/property-finder/screenshot-6.png",
+        "./assets/projects/property-finder/screenshot-7.png",
+        "./assets/projects/property-finder/screenshot-8.png"
+      ]
+    },
     {
       "id": 1,
       "title": "axio: BNPL, Personal Loan & Expense Tracker",

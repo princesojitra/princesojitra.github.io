@@ -93,7 +93,7 @@ body.dark-theme .ios-app {
 
 body.dark-theme .ios-card {
   background-color: var(--ios-dark-card-background);
-  box-shadow: 0 2px 10px var(--ios-dark-shadow);
+  box-shadow: 0 4px 16px var(--ios-dark-shadow);
 }
 
 body.dark-theme .ios-header {
@@ -249,7 +249,9 @@ body {
 }
 
 .ios-section {
-  padding: var(--spacing-md);
+  padding-top: var(--spacing-md);
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
   display: flex;
   flex-direction: column;
   gap: var(--spacing-md);
@@ -257,9 +259,9 @@ body {
 
 .ios-card {
   background-color: var(--ios-card-background);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   padding: var(--spacing-md);
-  box-shadow: 0 2px 10px var(--ios-shadow);
+  box-shadow: 0 4px 16px var(--ios-shadow);
   margin-bottom: var(--spacing-md);
   /* no scrollbar */
   overflow-y: hidden;

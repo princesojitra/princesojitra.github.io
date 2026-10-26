@@ -3,7 +3,7 @@ import '../styles/Resume.css';
 import resumeData from '../resume.json';
 
 const Resume: React.FC = () => {
-  const { basics, summary, skills, languages, work, education, projects } = resumeData;
+  const { basics, summary, summaryHighlights, skills, languages, work, education, projects } = resumeData;
   const resumeRef = useRef<HTMLDivElement>(null);
 
   const handlePrint = () => {
@@ -35,6 +35,13 @@ const Resume: React.FC = () => {
         <div className="resume-section">
           <h2>Professional Summary</h2>
           <p>{summary}</p>
+          <ul>
+            {summaryHighlights.map((highlight, index) => (
+              <li key={index}>
+                <strong>{highlight.label}:</strong> {highlight.detail}
+              </li>
+            ))}
+          </ul>
         </div>
 
         <div className="resume-section">

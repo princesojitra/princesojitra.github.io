@@ -70,6 +70,17 @@ body.dark-theme .tab-item.active {
 .tab-icon {
   margin-bottom: 4px;
   position: relative;
+  padding: 4px 14px;
+  border-radius: 14px;
+  transition: background-color var(--transition-fast);
+}
+
+.tab-item.active .tab-icon {
+  background-color: var(--ios-primary-light-bg);
+}
+
+body.dark-theme .tab-item.active .tab-icon {
+  background-color: var(--ios-dark-primary-light-bg);
 }
 
 .tab-label {
@@ -88,7 +99,7 @@ body.dark-theme .tab-item.active {
     height: calc(76px + env(safe-area-inset-bottom, 0px));
     padding-bottom: env(safe-area-inset-bottom, 0px);
   }
-  
+
   /* For mobile devices */
   @media (max-width: 767px) {
     .tab-bar {
@@ -101,4 +112,3 @@ body.dark-theme .tab-item.active {
 .phone-frame-content .ios-content {
   padding-bottom: 76px; /* Exact height of tab bar */
 }
-

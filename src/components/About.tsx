@@ -5,7 +5,7 @@ import resumeData from '../resume.json';
 import ThemeToggle from './ThemeToggle';
 
 const About: React.FC = () => {
-  const { basics, summary, skills, languages } = resumeData;
+  const { basics, summary, summaryHighlights, skills, languages } = resumeData;
 
   return (
     <div className="about-container ios-section">
@@ -23,6 +23,7 @@ const About: React.FC = () => {
         </div>
         <p className="profile-title">{basics.title}</p>
         <Link to="/resume" className="resume-link" target="_blank">View Resume</Link>
+        <a href="./assets/Prince_Sojitra_Resume.pdf" className="resume-link" download="Prince_Sojitra_Resume.pdf">Download Resume</a>
         <div className="theme-toggle-link">
           <ThemeToggle />
         </div>
@@ -30,7 +31,14 @@ const About: React.FC = () => {
 
       <div className="ios-card">
         <h3 className="section-title">Professional Summary</h3>
-        <p className="section-content">{summary}</p>
+        <p className="section-content summary-intro">{summary}</p>
+        <ul className="summary-highlights">
+          {summaryHighlights.map((highlight, index) => (
+            <li key={index}>
+              <strong>{highlight.label}:</strong> {highlight.detail}
+            </li>
+          ))}
+        </ul>
       </div>
 
       <div className="ios-card">

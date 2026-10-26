@@ -18,6 +18,10 @@ interface ResumeData {
     }[];
   };
   summary: string;
+  summaryHighlights: {
+    label: string;
+    detail: string;
+  }[];
   skills: {
     category: string;
     items: string[];
