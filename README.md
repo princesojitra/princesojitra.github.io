@@ -12,8 +12,8 @@ A modern, responsive portfolio website that mimics an iOS mobile interface to sh
 - 🌙 Dark/light mode support.
 - 📊 Fully responsive design (displays as an iPhone on desktop, native app on mobile).
 - 🧩 Tabbed navigation (About, Projects, Experience, Education, Contact).
-- 📝 PDF Resume generation.
-- 🖼️ Project showcase with image carousels.
+- 📝 Dedicated resume page with print-to-PDF, plus a downloadable PDF resume.
+- 🖼️ Project showcase with screenshots and a full-screen lightbox viewer.
 - ⚡ Built with React, TypeScript, and Vite.
 - 🚀 Easy deployment to GitHub Pages.
 
@@ -28,8 +28,8 @@ A modern, responsive portfolio website that mimics an iOS mobile interface to sh
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/ios-portfolio.git
-   cd ios-portfolio
+   git clone https://github.com/princesojitra/princesojitra.github.io.git
+   cd princesojitra.github.io
    ```
 
 2. Install dependencies:
@@ -90,8 +90,8 @@ Example structure:
 
 ### Adding Project Screenshots
 
-1. Place your project screenshots in `src/assets/projects/[project-folder-name]/`
-2. Update the `screenshots` array in the project entry in `resume.json`
+1. Place your project screenshots in `public/assets/projects/[project-folder-name]/`, named `screenshot-1.png`, `screenshot-2.png`, etc.
+2. Set `folderName` to match, and update the `screenshots` array in the project entry in `resume.json`
 
 ### Customizing Appearance
 
@@ -126,10 +126,10 @@ To manually trigger a deployment:
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+No LICENSE file is currently included in this repository, so default copyright applies (all rights reserved). Add a `LICENSE` file if you want to open this project up for reuse.
 
 ## Acknowledgments
 
-- Icons: [React Icons](https://react-icons.github.io/react-icons/)
+- Icons: [Lucide](https://lucide.dev/)
 - Router: [React Router](https://reactrouter.com/)
-- PDF Generation: [React-PDF](https://react-pdf.org/) 
+- Lightbox: [yet-another-react-lightbox](https://yet-another-react-lightbox.com/)
